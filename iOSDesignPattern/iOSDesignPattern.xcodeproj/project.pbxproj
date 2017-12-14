@@ -13,6 +13,11 @@
 		DE6F75081FE2213100D1C4EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE6F75071FE2213100D1C4EA /* Assets.xcassets */; };
 		DE6F750B1FE2213100D1C4EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6F75091FE2213100D1C4EA /* LaunchScreen.storyboard */; };
 		DE6F750E1FE2213100D1C4EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F750D1FE2213100D1C4EA /* main.m */; };
+		DE6F75151FE2216700D1C4EA /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F75141FE2216700D1C4EA /* ViewController.xib */; };
+		DE6F751D1FE221F700D1C4EA /* ProtocolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F751B1FE221F700D1C4EA /* ProtocolViewController.m */; };
+		DE6F751E1FE221F700D1C4EA /* ProtocolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F751C1FE221F700D1C4EA /* ProtocolViewController.xib */; };
+		DE6F75221FE222B400D1C4EA /* ProtocolDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F751F1FE222B400D1C4EA /* ProtocolDelegateViewController.xib */; };
+		DE6F75231FE222B400D1C4EA /* ProtocolDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F75211FE222B400D1C4EA /* ProtocolDelegateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,14 @@
 		DE6F750A1FE2213100D1C4EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE6F750C1FE2213100D1C4EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE6F750D1FE2213100D1C4EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE6F75141FE2216700D1C4EA /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		DE6F751A1FE221F700D1C4EA /* ProtocolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolViewController.h; sourceTree = "<group>"; };
+		DE6F751B1FE221F700D1C4EA /* ProtocolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProtocolViewController.m; sourceTree = "<group>"; };
+		DE6F751C1FE221F700D1C4EA /* ProtocolViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProtocolViewController.xib; sourceTree = "<group>"; };
+		DE6F751F1FE222B400D1C4EA /* ProtocolDelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProtocolDelegateViewController.xib; sourceTree = "<group>"; };
+		DE6F75201FE222B400D1C4EA /* ProtocolDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolDelegateViewController.h; sourceTree = "<group>"; };
+		DE6F75211FE222B400D1C4EA /* ProtocolDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolDelegateViewController.m; sourceTree = "<group>"; };
+		DE6F75241FE223A400D1C4EA /* ProtocolDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +71,12 @@
 		DE6F74FD1FE2213100D1C4EA /* iOSDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				DE6F75161FE221DA00D1C4EA /* Protocol */,
 				DE6F74FE1FE2213100D1C4EA /* AppDelegate.h */,
 				DE6F74FF1FE2213100D1C4EA /* AppDelegate.m */,
 				DE6F75011FE2213100D1C4EA /* ViewController.h */,
 				DE6F75021FE2213100D1C4EA /* ViewController.m */,
+				DE6F75141FE2216700D1C4EA /* ViewController.xib */,
 				DE6F75041FE2213100D1C4EA /* Main.storyboard */,
 				DE6F75071FE2213100D1C4EA /* Assets.xcassets */,
 				DE6F75091FE2213100D1C4EA /* LaunchScreen.storyboard */,
@@ -69,6 +84,44 @@
 				DE6F750D1FE2213100D1C4EA /* main.m */,
 			);
 			path = iOSDesignPattern;
+			sourceTree = "<group>";
+		};
+		DE6F75161FE221DA00D1C4EA /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F75171FE221DA00D1C4EA /* Controller */,
+				DE6F75181FE221DA00D1C4EA /* Model */,
+				DE6F75191FE221DA00D1C4EA /* View */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		DE6F75171FE221DA00D1C4EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F75201FE222B400D1C4EA /* ProtocolDelegateViewController.h */,
+				DE6F75211FE222B400D1C4EA /* ProtocolDelegateViewController.m */,
+				DE6F751F1FE222B400D1C4EA /* ProtocolDelegateViewController.xib */,
+				DE6F751A1FE221F700D1C4EA /* ProtocolViewController.h */,
+				DE6F751B1FE221F700D1C4EA /* ProtocolViewController.m */,
+				DE6F751C1FE221F700D1C4EA /* ProtocolViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE6F75181FE221DA00D1C4EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE6F75241FE223A400D1C4EA /* ProtocolDelegate.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE6F75191FE221DA00D1C4EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6F750B1FE2213100D1C4EA /* LaunchScreen.storyboard in Resources */,
+				DE6F751E1FE221F700D1C4EA /* ProtocolViewController.xib in Resources */,
 				DE6F75081FE2213100D1C4EA /* Assets.xcassets in Resources */,
+				DE6F75221FE222B400D1C4EA /* ProtocolDelegateViewController.xib in Resources */,
+				DE6F75151FE2216700D1C4EA /* ViewController.xib in Resources */,
 				DE6F75061FE2213100D1C4EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +198,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6F751D1FE221F700D1C4EA /* ProtocolViewController.m in Sources */,
+				DE6F75231FE222B400D1C4EA /* ProtocolDelegateViewController.m in Sources */,
 				DE6F75031FE2213100D1C4EA /* ViewController.m in Sources */,
 				DE6F750E1FE2213100D1C4EA /* main.m in Sources */,
 				DE6F75001FE2213100D1C4EA /* AppDelegate.m in Sources */,
