@@ -27,10 +27,14 @@
 {
     if ([self.delegate respondsToSelector:@selector(optionalProtocolFunc:)])
     {
-        [self.delegate optionalProtocolFunc:@"You have called Delegate"];
+        [self.delegate optionalProtocolFunc:@"You have called a Delegate"];
     }
     [self.navigationController popViewControllerAnimated:YES];
 }
+
+
+
+
 
 /*
 #pragma mark - Navigation

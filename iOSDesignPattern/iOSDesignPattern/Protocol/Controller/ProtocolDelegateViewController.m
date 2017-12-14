@@ -9,7 +9,7 @@
 #import "ProtocolDelegateViewController.h"
 #import "ProtocolViewController.h"
 
-@interface ProtocolDelegateViewController ()<ProtocolDelegate>
+@interface ProtocolDelegateViewController ()
 {
     __weak IBOutlet UILabel *_desLabel;
 }
@@ -27,6 +27,20 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+#pragma mark - ProtocolDelegate Method
+
+- (void)optionalProtocolFunc:(NSString *)string
+{
+    _desLabel.text = string;
+}
+
+
+
+
+#pragma mark - StartDemo
+
 - (IBAction)didStartDemoButtonTouch:(id)sender
 {
     ProtocolViewController *viewController = nil;
@@ -35,13 +49,6 @@
     viewController.delegate = self;
     [self.navigationController pushViewController:viewController
                                          animated:YES];
-}
-
-#pragma mark - ProtocolDelegate Method
-
-- (void)optionalProtocolFunc:(NSString *)string
-{
-    _desLabel.text = string;
 }
 
 /*

@@ -7,9 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProtocolDelegate.h"
 
-@interface ProtocolDelegateViewController : UIViewController 
+
+@interface ProtocolDelegateViewController : UIViewController<ProtocolDelegate>//import并声明协议ProtocolDelegate
 
 
 
 @end
+
+
+
+
+

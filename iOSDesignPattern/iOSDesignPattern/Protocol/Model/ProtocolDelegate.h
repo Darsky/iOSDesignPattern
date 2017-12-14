@@ -11,7 +11,6 @@
 @protocol ProtocolDelegate <NSObject>
 
 @required
-
 - (void)requiredProtocolFunc:(NSString*)string;
 
 @optional

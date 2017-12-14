@@ -10,7 +10,7 @@
 #import "ProtocolDelegate.h"
 
 
-@interface ProtocolViewController : UIViewController<ProtocolDelegate>
+@interface ProtocolViewController : UIViewController
 
 @property (weak, nonatomic) id <ProtocolDelegate> delegate;
 
