@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ProtocolDelegateViewController.h"
+#import "FactoryDemoViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -27,7 +28,7 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _designPatterns = @[@"Protocol"];
+    _designPatterns = @[@"Protocol",@"Factory"];
 }
 
 #pragma mark - UITableViewDataSource Method
@@ -70,6 +71,14 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
         ProtocolDelegateViewController *vController = nil;
         vController = [[ProtocolDelegateViewController alloc] initWithNibName:@"ProtocolDelegateViewController"
                                                                        bundle:nil];
+        [self.navigationController pushViewController:vController
+                                             animated:YES];
+    }
+    else if ([_designPatterns[indexPath.row] isEqualToString:@"Factory"])
+    {
+        FactoryDemoViewController *vController = nil;
+        vController = [[FactoryDemoViewController alloc] initWithNibName:@"FactoryDemoViewController"
+                                                                  bundle:nil];
         [self.navigationController pushViewController:vController
                                              animated:YES];
     }

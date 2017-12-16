@@ -18,6 +18,14 @@
 		DE6F751E1FE221F700D1C4EA /* ProtocolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F751C1FE221F700D1C4EA /* ProtocolViewController.xib */; };
 		DE6F75221FE222B400D1C4EA /* ProtocolDelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE6F751F1FE222B400D1C4EA /* ProtocolDelegateViewController.xib */; };
 		DE6F75231FE222B400D1C4EA /* ProtocolDelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F75211FE222B400D1C4EA /* ProtocolDelegateViewController.m */; };
+		DE9E08181FE506D800B9934B /* Clothe.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E08171FE506D800B9934B /* Clothe.m */; };
+		DE9E081B1FE5070600B9934B /* Shirt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E081A1FE5070600B9934B /* Shirt.m */; };
+		DE9E081E1FE5075200B9934B /* Tshirt.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E081D1FE5075200B9934B /* Tshirt.m */; };
+		DE9E08211FE5077E00B9934B /* ClotheFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E08201FE5077E00B9934B /* ClotheFactory.m */; };
+		DE9E08251FE508D400B9934B /* FactoryDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E08231FE508D400B9934B /* FactoryDemoViewController.m */; };
+		DE9E08261FE508D400B9934B /* FactoryDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE9E08241FE508D400B9934B /* FactoryDemoViewController.xib */; };
+		DE9E08291FE5092400B9934B /* ShirtFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E08281FE5092400B9934B /* ShirtFactory.m */; };
+		DE9E082C1FE5096000B9934B /* TshirtFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DE9E082B1FE5096000B9934B /* TshirtFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,21 @@
 		DE6F75201FE222B400D1C4EA /* ProtocolDelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProtocolDelegateViewController.h; sourceTree = "<group>"; };
 		DE6F75211FE222B400D1C4EA /* ProtocolDelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProtocolDelegateViewController.m; sourceTree = "<group>"; };
 		DE6F75241FE223A400D1C4EA /* ProtocolDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProtocolDelegate.h; sourceTree = "<group>"; };
+		DE9E08161FE506D800B9934B /* Clothe.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Clothe.h; sourceTree = "<group>"; };
+		DE9E08171FE506D800B9934B /* Clothe.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clothe.m; sourceTree = "<group>"; };
+		DE9E08191FE5070600B9934B /* Shirt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shirt.h; sourceTree = "<group>"; };
+		DE9E081A1FE5070600B9934B /* Shirt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Shirt.m; sourceTree = "<group>"; };
+		DE9E081C1FE5075200B9934B /* Tshirt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tshirt.h; sourceTree = "<group>"; };
+		DE9E081D1FE5075200B9934B /* Tshirt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tshirt.m; sourceTree = "<group>"; };
+		DE9E081F1FE5077E00B9934B /* ClotheFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClotheFactory.h; sourceTree = "<group>"; };
+		DE9E08201FE5077E00B9934B /* ClotheFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClotheFactory.m; sourceTree = "<group>"; };
+		DE9E08221FE508D400B9934B /* FactoryDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FactoryDemoViewController.h; sourceTree = "<group>"; };
+		DE9E08231FE508D400B9934B /* FactoryDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactoryDemoViewController.m; sourceTree = "<group>"; };
+		DE9E08241FE508D400B9934B /* FactoryDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactoryDemoViewController.xib; sourceTree = "<group>"; };
+		DE9E08271FE5092400B9934B /* ShirtFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShirtFactory.h; sourceTree = "<group>"; };
+		DE9E08281FE5092400B9934B /* ShirtFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShirtFactory.m; sourceTree = "<group>"; };
+		DE9E082A1FE5096000B9934B /* TshirtFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TshirtFactory.h; sourceTree = "<group>"; };
+		DE9E082B1FE5096000B9934B /* TshirtFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TshirtFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +94,7 @@
 		DE6F74FD1FE2213100D1C4EA /* iOSDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				DE9E08121FE5060000B9934B /* Factory */,
 				DE6F75161FE221DA00D1C4EA /* Protocol */,
 				DE6F74FE1FE2213100D1C4EA /* AppDelegate.h */,
 				DE6F74FF1FE2213100D1C4EA /* AppDelegate.m */,
@@ -118,6 +142,52 @@
 			sourceTree = "<group>";
 		};
 		DE6F75191FE221DA00D1C4EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE9E08121FE5060000B9934B /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E08131FE5060000B9934B /* Controller */,
+				DE9E08141FE5060000B9934B /* Model */,
+				DE9E08151FE5060000B9934B /* View */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		DE9E08131FE5060000B9934B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E08221FE508D400B9934B /* FactoryDemoViewController.h */,
+				DE9E08231FE508D400B9934B /* FactoryDemoViewController.m */,
+				DE9E08241FE508D400B9934B /* FactoryDemoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE9E08141FE5060000B9934B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE9E08161FE506D800B9934B /* Clothe.h */,
+				DE9E08171FE506D800B9934B /* Clothe.m */,
+				DE9E08191FE5070600B9934B /* Shirt.h */,
+				DE9E081A1FE5070600B9934B /* Shirt.m */,
+				DE9E081C1FE5075200B9934B /* Tshirt.h */,
+				DE9E081D1FE5075200B9934B /* Tshirt.m */,
+				DE9E081F1FE5077E00B9934B /* ClotheFactory.h */,
+				DE9E08201FE5077E00B9934B /* ClotheFactory.m */,
+				DE9E08271FE5092400B9934B /* ShirtFactory.h */,
+				DE9E08281FE5092400B9934B /* ShirtFactory.m */,
+				DE9E082A1FE5096000B9934B /* TshirtFactory.h */,
+				DE9E082B1FE5096000B9934B /* TshirtFactory.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE9E08151FE5060000B9934B /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -182,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE9E08261FE508D400B9934B /* FactoryDemoViewController.xib in Resources */,
 				DE6F750B1FE2213100D1C4EA /* LaunchScreen.storyboard in Resources */,
 				DE6F751E1FE221F700D1C4EA /* ProtocolViewController.xib in Resources */,
 				DE6F75081FE2213100D1C4EA /* Assets.xcassets in Resources */,
@@ -199,10 +270,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				DE6F751D1FE221F700D1C4EA /* ProtocolViewController.m in Sources */,
+				DE9E081E1FE5075200B9934B /* Tshirt.m in Sources */,
 				DE6F75231FE222B400D1C4EA /* ProtocolDelegateViewController.m in Sources */,
+				DE9E08181FE506D800B9934B /* Clothe.m in Sources */,
+				DE9E082C1FE5096000B9934B /* TshirtFactory.m in Sources */,
 				DE6F75031FE2213100D1C4EA /* ViewController.m in Sources */,
+				DE9E081B1FE5070600B9934B /* Shirt.m in Sources */,
 				DE6F750E1FE2213100D1C4EA /* main.m in Sources */,
+				DE9E08291FE5092400B9934B /* ShirtFactory.m in Sources */,
 				DE6F75001FE2213100D1C4EA /* AppDelegate.m in Sources */,
+				DE9E08251FE508D400B9934B /* FactoryDemoViewController.m in Sources */,
+				DE9E08211FE5077E00B9934B /* ClotheFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
