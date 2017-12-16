@@ -7,8 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "Tshirt.h"
-#import "Shirt.h"
+@class Clothe;
 
 @interface ClotheFactory : NSObject
 
@@ -16,3 +15,6 @@
 
 
 @end
+
+
+

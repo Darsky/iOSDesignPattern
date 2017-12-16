@@ -7,13 +7,13 @@
 //
 
 #import "ShirtFactory.h"
+#import "Shirt.h"
 
 @implementation ShirtFactory
 
 + (Clothe*)produceProduct
 {
     Shirt *shirt = [[Shirt alloc] init];
-    shirt.productName = @"衬衣分厂-衬衣";
     return shirt;
 }
 @end

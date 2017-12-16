@@ -10,6 +10,9 @@
 #import "ClotheFactory.h"
 #import "ShirtFactory.h"
 #import "TshirtFactory.h"
+#import "Clothe.h"
+#import "Tshirt.h"
+#import "Shirt.h"
 
 @interface FactoryDemoViewController ()
 {

@@ -10,4 +10,17 @@
 
 @implementation Tshirt
 
+- (instancetype)init
+{
+    self = [super init];
+    
+    if (self)
+    {
+        self.productName = @"T恤";
+    }
+    
+    return self;
+}
 @end
+
+
