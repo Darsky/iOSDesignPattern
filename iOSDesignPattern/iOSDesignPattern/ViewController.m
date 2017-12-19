@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "ProtocolDelegateViewController.h"
 #import "FactoryDemoViewController.h"
+#import "MVCDemoViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -28,7 +29,7 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _designPatterns = @[@"Protocol",@"Factory"];
+    _designPatterns = @[@"MVC",@"Protocol",@"Factory"];
 }
 
 #pragma mark - UITableViewDataSource Method
@@ -62,7 +63,15 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
 {
     [tableView deselectRowAtIndexPath:indexPath
                              animated:YES];
-    if ([_designPatterns[indexPath.row] isEqualToString:@""])
+    if ([_designPatterns[indexPath.row] isEqualToString:@"MVC"])
+    {
+        MVCDemoViewController *vController = nil;
+        vController = [[MVCDemoViewController alloc] initWithNibName:@"MVCDemoViewController"
+                                                              bundle:nil];
+        [self.navigationController pushViewController:vController
+                                             animated:YES];
+    }
+    else if ([_designPatterns[indexPath.row] isEqualToString:@""])
     {
         
     }

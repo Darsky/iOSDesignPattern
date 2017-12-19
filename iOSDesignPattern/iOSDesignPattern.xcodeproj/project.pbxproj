@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE4E390F1FE8B5E800B97A4B /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4E390E1FE8B5E800B97A4B /* GoodsModel.m */; };
+		DE4E39131FE8B6B700B97A4B /* MVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4E39111FE8B6B700B97A4B /* MVCDemoViewController.m */; };
+		DE4E39141FE8B6B700B97A4B /* MVCDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4E39121FE8B6B700B97A4B /* MVCDemoViewController.xib */; };
+		DE4E39181FE8B72200B97A4B /* GoodsListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4E39161FE8B72200B97A4B /* GoodsListCell.m */; };
+		DE4E39191FE8B72200B97A4B /* GoodsListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4E39171FE8B72200B97A4B /* GoodsListCell.xib */; };
 		DE6F75001FE2213100D1C4EA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F74FF1FE2213100D1C4EA /* AppDelegate.m */; };
 		DE6F75031FE2213100D1C4EA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE6F75021FE2213100D1C4EA /* ViewController.m */; };
 		DE6F75061FE2213100D1C4EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6F75041FE2213100D1C4EA /* Main.storyboard */; };
@@ -29,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE4E390D1FE8B5E800B97A4B /* GoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
+		DE4E390E1FE8B5E800B97A4B /* GoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
+		DE4E39101FE8B6B700B97A4B /* MVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCDemoViewController.h; sourceTree = "<group>"; };
+		DE4E39111FE8B6B700B97A4B /* MVCDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCDemoViewController.m; sourceTree = "<group>"; };
+		DE4E39121FE8B6B700B97A4B /* MVCDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVCDemoViewController.xib; sourceTree = "<group>"; };
+		DE4E39151FE8B72200B97A4B /* GoodsListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsListCell.h; sourceTree = "<group>"; };
+		DE4E39161FE8B72200B97A4B /* GoodsListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsListCell.m; sourceTree = "<group>"; };
+		DE4E39171FE8B72200B97A4B /* GoodsListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoodsListCell.xib; sourceTree = "<group>"; };
 		DE6F74FB1FE2213100D1C4EA /* iOSDesignPattern.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDesignPattern.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6F74FE1FE2213100D1C4EA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE6F74FF1FE2213100D1C4EA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,6 +88,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE4E39091FE8B4C600B97A4B /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E390A1FE8B4C600B97A4B /* Controller */,
+				DE4E390B1FE8B4C600B97A4B /* Model */,
+				DE4E390C1FE8B4C600B97A4B /* View */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		DE4E390A1FE8B4C600B97A4B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E39101FE8B6B700B97A4B /* MVCDemoViewController.h */,
+				DE4E39111FE8B6B700B97A4B /* MVCDemoViewController.m */,
+				DE4E39121FE8B6B700B97A4B /* MVCDemoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE4E390B1FE8B4C600B97A4B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E390D1FE8B5E800B97A4B /* GoodsModel.h */,
+				DE4E390E1FE8B5E800B97A4B /* GoodsModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE4E390C1FE8B4C600B97A4B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE4E39151FE8B72200B97A4B /* GoodsListCell.h */,
+				DE4E39161FE8B72200B97A4B /* GoodsListCell.m */,
+				DE4E39171FE8B72200B97A4B /* GoodsListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE6F74F21FE2213100D1C4EA = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +146,7 @@
 		DE6F74FD1FE2213100D1C4EA /* iOSDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				DE4E39091FE8B4C600B97A4B /* MVC */,
 				DE9E08121FE5060000B9934B /* Factory */,
 				DE6F75161FE221DA00D1C4EA /* Protocol */,
 				DE6F74FE1FE2213100D1C4EA /* AppDelegate.h */,
@@ -256,9 +309,11 @@
 				DE6F750B1FE2213100D1C4EA /* LaunchScreen.storyboard in Resources */,
 				DE6F751E1FE221F700D1C4EA /* ProtocolViewController.xib in Resources */,
 				DE6F75081FE2213100D1C4EA /* Assets.xcassets in Resources */,
+				DE4E39141FE8B6B700B97A4B /* MVCDemoViewController.xib in Resources */,
 				DE6F75221FE222B400D1C4EA /* ProtocolDelegateViewController.xib in Resources */,
 				DE6F75151FE2216700D1C4EA /* ViewController.xib in Resources */,
 				DE6F75061FE2213100D1C4EA /* Main.storyboard in Resources */,
+				DE4E39191FE8B72200B97A4B /* GoodsListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +327,16 @@
 				DE6F751D1FE221F700D1C4EA /* ProtocolViewController.m in Sources */,
 				DE9E081E1FE5075200B9934B /* Tshirt.m in Sources */,
 				DE6F75231FE222B400D1C4EA /* ProtocolDelegateViewController.m in Sources */,
+				DE4E390F1FE8B5E800B97A4B /* GoodsModel.m in Sources */,
 				DE9E08181FE506D800B9934B /* Clothe.m in Sources */,
 				DE9E082C1FE5096000B9934B /* TshirtFactory.m in Sources */,
+				DE4E39131FE8B6B700B97A4B /* MVCDemoViewController.m in Sources */,
 				DE6F75031FE2213100D1C4EA /* ViewController.m in Sources */,
 				DE9E081B1FE5070600B9934B /* Shirt.m in Sources */,
 				DE6F750E1FE2213100D1C4EA /* main.m in Sources */,
 				DE9E08291FE5092400B9934B /* ShirtFactory.m in Sources */,
 				DE6F75001FE2213100D1C4EA /* AppDelegate.m in Sources */,
+				DE4E39181FE8B72200B97A4B /* GoodsListCell.m in Sources */,
 				DE9E08251FE508D400B9934B /* FactoryDemoViewController.m in Sources */,
 				DE9E08211FE5077E00B9934B /* ClotheFactory.m in Sources */,
 			);
