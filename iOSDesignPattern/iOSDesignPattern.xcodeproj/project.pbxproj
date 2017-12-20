@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE365A791FEA056A0087C353 /* MVVMDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE365A771FEA056A0087C353 /* MVVMDemoViewController.m */; };
+		DE365A7A1FEA056A0087C353 /* MVVMDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE365A781FEA056A0087C353 /* MVVMDemoViewController.xib */; };
+		DE365A7E1FEA06190087C353 /* GoodsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE365A7D1FEA06190087C353 /* GoodsViewModel.m */; };
 		DE4E390F1FE8B5E800B97A4B /* GoodsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4E390E1FE8B5E800B97A4B /* GoodsModel.m */; };
 		DE4E39131FE8B6B700B97A4B /* MVCDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4E39111FE8B6B700B97A4B /* MVCDemoViewController.m */; };
 		DE4E39141FE8B6B700B97A4B /* MVCDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE4E39121FE8B6B700B97A4B /* MVCDemoViewController.xib */; };
@@ -34,6 +37,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE365A761FEA056A0087C353 /* MVVMDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVVMDemoViewController.h; sourceTree = "<group>"; };
+		DE365A771FEA056A0087C353 /* MVVMDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMDemoViewController.m; sourceTree = "<group>"; };
+		DE365A781FEA056A0087C353 /* MVVMDemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMDemoViewController.xib; sourceTree = "<group>"; };
+		DE365A7C1FEA06190087C353 /* GoodsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsViewModel.h; sourceTree = "<group>"; };
+		DE365A7D1FEA06190087C353 /* GoodsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsViewModel.m; sourceTree = "<group>"; };
 		DE4E390D1FE8B5E800B97A4B /* GoodsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoodsModel.h; sourceTree = "<group>"; };
 		DE4E390E1FE8B5E800B97A4B /* GoodsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoodsModel.m; sourceTree = "<group>"; };
 		DE4E39101FE8B6B700B97A4B /* MVCDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCDemoViewController.h; sourceTree = "<group>"; };
@@ -88,6 +96,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE365A721FEA047F0087C353 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				DE365A7B1FEA060A0087C353 /* ViewModel */,
+				DE365A731FEA047F0087C353 /* Controller */,
+				DE365A741FEA047F0087C353 /* Model */,
+				DE365A751FEA047F0087C353 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		DE365A731FEA047F0087C353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE365A761FEA056A0087C353 /* MVVMDemoViewController.h */,
+				DE365A771FEA056A0087C353 /* MVVMDemoViewController.m */,
+				DE365A781FEA056A0087C353 /* MVVMDemoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE365A741FEA047F0087C353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE365A751FEA047F0087C353 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE365A7B1FEA060A0087C353 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DE365A7C1FEA06190087C353 /* GoodsViewModel.h */,
+				DE365A7D1FEA06190087C353 /* GoodsViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		DE4E39091FE8B4C600B97A4B /* MVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +198,7 @@
 		DE6F74FD1FE2213100D1C4EA /* iOSDesignPattern */ = {
 			isa = PBXGroup;
 			children = (
+				DE365A721FEA047F0087C353 /* MVVM */,
 				DE4E39091FE8B4C600B97A4B /* MVC */,
 				DE9E08121FE5060000B9934B /* Factory */,
 				DE6F75161FE221DA00D1C4EA /* Protocol */,
@@ -312,6 +365,7 @@
 				DE4E39141FE8B6B700B97A4B /* MVCDemoViewController.xib in Resources */,
 				DE6F75221FE222B400D1C4EA /* ProtocolDelegateViewController.xib in Resources */,
 				DE6F75151FE2216700D1C4EA /* ViewController.xib in Resources */,
+				DE365A7A1FEA056A0087C353 /* MVVMDemoViewController.xib in Resources */,
 				DE6F75061FE2213100D1C4EA /* Main.storyboard in Resources */,
 				DE4E39191FE8B72200B97A4B /* GoodsListCell.xib in Resources */,
 			);
@@ -337,8 +391,10 @@
 				DE9E08291FE5092400B9934B /* ShirtFactory.m in Sources */,
 				DE6F75001FE2213100D1C4EA /* AppDelegate.m in Sources */,
 				DE4E39181FE8B72200B97A4B /* GoodsListCell.m in Sources */,
+				DE365A791FEA056A0087C353 /* MVVMDemoViewController.m in Sources */,
 				DE9E08251FE508D400B9934B /* FactoryDemoViewController.m in Sources */,
 				DE9E08211FE5077E00B9934B /* ClotheFactory.m in Sources */,
+				DE365A7E1FEA06190087C353 /* GoodsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

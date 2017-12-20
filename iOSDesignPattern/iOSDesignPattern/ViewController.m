@@ -10,6 +10,7 @@
 #import "ProtocolDelegateViewController.h"
 #import "FactoryDemoViewController.h"
 #import "MVCDemoViewController.h"
+#import "MVVMDemoViewController.h"
 
 @interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
@@ -29,7 +30,7 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _designPatterns = @[@"MVC",@"Protocol",@"Factory"];
+    _designPatterns = @[@"MVC",@"MVVM",@"Protocol",@"Factory"];
 }
 
 #pragma mark - UITableViewDataSource Method
@@ -71,9 +72,13 @@ static NSString *MainControllerCellIdentifier    = @"MainControllerCell";
         [self.navigationController pushViewController:vController
                                              animated:YES];
     }
-    else if ([_designPatterns[indexPath.row] isEqualToString:@""])
+    else if ([_designPatterns[indexPath.row] isEqualToString:@"MVVM"])
     {
-        
+        MVVMDemoViewController *vController = nil;
+        vController = [[MVVMDemoViewController alloc] initWithNibName:@"MVVMDemoViewController"
+                                                              bundle:nil];
+        [self.navigationController pushViewController:vController
+                                             animated:YES];
     }
     else if ([_designPatterns[indexPath.row] isEqualToString:@"Protocol"])
     {
